@@ -1,0 +1,27 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Deploy to S3
+        uses: actions/aws/cli@master
+        with:
+          args: 's3 sync . s3://${{secrets.BUCKET}} --region us-east-1 --cache-control "max-age=31536000" --delete --exclude ".git" --exclude ".github"'
+        env:
+          AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+          AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+      - name: Invalidate Cloudfront
+        uses: actions/aws/cli@master
+        with:
+          args: 'cloudfront create-invalidation --distribution-id ${{secrets.CLOUDFRONT_DISTRIBUTION}} --paths "index.html style.css"'
+        env:
+          AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+          AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
