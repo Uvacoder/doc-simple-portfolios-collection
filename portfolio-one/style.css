@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "NeueHaasUnica";
+  src: url("./static/nhup.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 40em) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "NeueHaasUnica", sans-serif;
+}
+
+@media screen and (min-width: 40em) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;=
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  max-width: 520px;
+  padding: 24px;
+}
+
+@media screen and (min-width: 40em) {
+  main {
+    padding: 32px;
+  }
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+a[href^="https://twitter.com"] {
+  color: #55acee;
+}
+
+a[href^="https://github.com"] {
+  color: #aaa;
+}
+
+a[href^="https://dribbble.com"] {
+  color: #ea4c89;
+}
+
+ul p {
+  margin: 0;
+}
