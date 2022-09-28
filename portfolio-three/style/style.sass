@@ -1,0 +1,323 @@
+$background: rgb(13, 19, 26)
+$orange: rgb(255, 126, 103)
+$b-orange: rgb(207, 117,0)
+$fade-gray: rgb(44,50,61)
+$fade-white: rgb(193, 194, 198)
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'inter'
+    scroll-behavior: smooth
+
+body
+    padding: 0 10%
+    background: $background
+    color: white
+
+nav
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    height: 10vh
+
+    ul
+        color: $fade-white
+        list-style: none
+        display: flex
+        justify-content: center
+        align-items: center
+
+        li
+            margin-right: 15px
+            transition: .3s
+
+            a
+                text-decoration: none
+                color: $fade-white
+                transition: .3s
+            a:hover
+                transition: .3s
+                color: $orange
+                cursor: pointer
+
+    button
+        background: none
+        border: none
+        outline: none
+
+        i
+            color: white
+            font-size: 20px
+    button:hover
+        cursor: pointer
+
+.home
+    height: 70vh
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: center
+    font-weight: 500
+
+    h1
+        line-height: 40px
+        text-align: center
+        margin: 70px 0
+        max-width: 800px
+
+    span
+        width: 100%
+        max-width: 300px
+        display: flex
+        justify-content: space-evenly
+        align-items: fexd
+
+        height: 0px
+        button
+            padding: 15px 25px
+            border: none
+            font-weight: bold
+            border-radius: 5px
+            transition: .3s
+            height: 45px
+
+            a
+                text-decoration: none
+                color: $background
+
+        button:hover
+            cursor: pointer
+            opacity: .7
+            transition: .3s
+
+            border-radius: 5px
+        .email
+            background: $orange
+        .resume
+            background: $fade-gray
+            color: $fade-white
+
+.icons
+    margin-top: 60px
+    font-size: 22px
+    height: 40px
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    a
+        transition: .3s
+        color: $fade-white
+
+    a:hover
+        cursor: pointer
+        color: $orange
+        transition: .3s
+
+.about
+    height: auto
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+
+    h1
+        margin: 20px 0
+        font-size: 32px
+
+    p
+        line-height: 30px
+        color: $fade-white
+        margin-bottom: 70px
+
+    h2
+        margin: 20px 0
+        font-size: 20px
+
+.skill-container
+    margin-top: 10px
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-evenly
+    align-items: center
+
+    .container
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        margin: 0 10px
+        i
+            font-size: 50px
+        p
+            font-size: 12px
+            text-align: center
+
+.projects
+    h1
+        font-size: 32px
+        margin: 20px 0
+    p
+        color: $fade-white
+        margin-bottom: 70px
+
+    .project-container
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-bottom: 70px
+
+        .card
+            border-radius: 5px
+            background: rgb(30, 38, 47)
+            padding: 20px
+            width: 100%
+            height: 400px
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: flex-start
+            margin-bottom: 20px
+
+            h3
+                color: $orange
+                margin-bottom: 20px
+
+            p
+                color: rgb(126, 140, 154)
+                margin-bottom: 10px
+                line-height: 25px
+            a
+                text-decoration: none
+
+            .skills
+                width: 100%
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                justify-content: flex-start
+                align-items: center
+                margin-bottom: 20px
+
+                h6
+                    color: white
+                    background: $b-orange
+                    padding: 8px 10px
+                    border-radius: 5px
+                    margin-right: 10px
+                    margin-bottom: 10px
+
+            .links
+                width: 100%
+                display: flex
+                justify-content: flex-end
+
+            a
+                margin-left: 10px
+                color: rgb(126, 140, 154)
+                transition: .3s
+
+            a:hover
+                color: white
+                transition: .3s
+                cursor: pointer
+
+.contact
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    h1
+        font-size: 32px
+        margin-bottom: 20px
+    p
+        color: $fade-white
+        margin-bottom: 70px
+
+    .contact-form
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        width: 100%
+        height: auto
+        margin-bottom: 70px
+        input
+            width: 100%
+            height: 50px
+            margin-bottom: 20px
+            padding-left: 10px
+            background: none
+            border: none
+            border-bottom: 1px solid $fade-white
+            color: white
+            font-size: 16px
+            outline: none
+            transition: .3s
+        input:focus
+            transition: .3s
+            border-bottom: 1px solid $orange
+        textarea
+            resize: none
+            border: none
+            width: 100%
+            height: 200px
+            max-height: 300px
+            margin-bottom: 20px
+            padding-left: 10px
+            padding-top: 10px
+            background: none
+            color: white
+            font-size: 16px
+            transition: .3s
+        textarea:focus
+            transition: .3s
+        button
+            padding: 15px 25px
+            border: none
+            font-weight: bold
+            border-radius: 5px
+            transition: .3s
+            height: 45px
+            background: $orange
+        button:hover
+            cursor: pointer
+            opacity: .7
+            transition: .3s
+
+.resume
+    color: $fade-white
+
+@media only screen and (min-width: 1300px)
+    body
+        padding: 0 15%
+
+    .project-container
+        height: 100%
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row !important
+        justify-content: space-between !important
+        align-items: center
+
+        .card
+            width: 49.3% !important
+            display: flex
+            flex-wrap: wrap
+            flex-direction: row
+            justify-content: flex-start
+            align-items: center
+            height: 300px
