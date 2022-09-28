@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanner Thomas</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <h1 class="header">
+        Hello, Im Tanner. Im a self-taught web developer with a passion for front and backend development
+      </h1>
+      <span class="btn"
+        ><button class="email"><a href='mailto:thetannerthomas@gmail.com'>EMAIL ME</a></button
+        ><button  class="resume"><a class="resume" href='./Resume.pdf' download='resume'>RESUME</a></button></span
+      >
+      <span class="icons">
+        <a href="https://github.com/codetann" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://codepen.io/codetann" target="_blank"><i class="fab fa-codepen"></i></a>
+        <a href="https://instagram.com/codetann" target="_blank"><i class="fab fa-instagram"></i></a>
+      </span>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h1 class="header">About Me</h1>
+      <p>
+        I'm a self-taught frontend developer based in Salt Lake City, Utah. My goal is to create engaging experiences for users, with a fine balance of technology and design.
+      </p>
+      <h2 class="header">Skills</h1>
+      <p>Technologies I've worked with</p>
+      <div class="skill-container">
+        <div class="container">
+          <i style="color: #00d8ff" class="fab fa-react"></i>
+          <p>React</p>
+        </div>
+        <div class="container">
+          <i style="color: #f7df1e" class="fab fa-js"></i>
+          <p>Javascript</p>
+        </div >
+        <div class="container">
+          <i style="color: #e34f26" class="fab fa-html5"></i>
+          <p>HTML 5</p>
+        </div>
+        <div class="container">
+          <i style="color: #0099e5" class="fab fa-css3-alt"></i>
+          <p>CSS</p>
+        </div>
+        <div class="container">
+          <i style="color: #cc7bd3" class="fab fa-sass"></i>
+          <p>Sass</p>
+        </div>
+        <div class="container">
+          <i style="color: #6cc24a" class="fab fa-node"></i>
+          <p>Node JS</p>
+        </div>
+        <div class="container">
+          <i style="color: #ee6a2d" class="fab fa-git-alt"></i>
+          <p>GIT</p>
+        </div>
+        <div class="container">
+          <i style="color: #ffde57" class="fab fa-python"></i>
+          <p>Python</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Secton-->
+    <section id="projects" class="projects">
+      <h1 class="header">Projects</h1>
+      <p>Collection of personal web dev projects</p>
+      <div class="project-container">
+        <div class="card">
+          <h3>Pixels</h3>
+          <p><em>A free stock photo web app, based on the pexels API. This project provides the ability to save your favorite images with the power of local storage</em></p>
+          <span class="skills"><h6>React</h6><h6>Pexels API</h6><h6>React Hooks</h6><h6>React-Router</h6></span>
+          <span class="links"><a target="_blank" href="https://github.com/codetann/pixels-portfolio">Github <i class="fas fa-external-link-alt"></i></a><a target="_blank" href="https://6035474117e47b09cf8fc69b--cranky-noether-5d469c.netlify.app/">Live App <i class="fas fa-external-link-alt"></i></a></span>
+        </div>
+        <div class="card">
+          <h3>Messages</h3>
+          <p><em>A simple chatroom application, which provides users with the ability to sign in with their google account. Users messages are stored on firebase.</em></p>
+          <span class="skills"><h6>React</h6><h6>React Bootstrap</h6><h6>Firebase</h6><h6>Firestore</h6> <h6>Netlify</h6></span>
+          <span class="links"><a target="_blank" href="https://github.com/codetann/firebase-messages">Github <i class="fas fa-external-link-alt"></i></a><a target="_blank" href="https://upbeat-poincare-0a234e.netlify.app">Live App <i class="fas fa-external-link-alt"></i></a></span>
+        </div>
+        <div class="card">
+          <h3>QWIZ</h3>
+          <p><em>A web application made for trivia. Allows users to pick a category, difficulty, and nickname. Saves the users score and nickname to firebase.</em></p>
+          <span class="skills"><h6>React</h6><h6>React-Router</h6><h6>Styled-Componetns</h6><h6>Firebase</h6></span>
+          <span class="links"><a target="_blank" href="https://github.com/codetann/QWIZ">Github <i class="fas fa-external-link-alt"></i></a><a target="_blank" href="https://infallible-hypatia-374001.netlify.app/">Live App <i class="fas fa-external-link-alt"></i></a></span>
+        </div>
+        <div class="card">
+          <h3>Open Brewery</h3>
+          <p><em>A web application that uses the open brewery API. Takes in the information and displays it on a leaflet map allowing the user to see the information for the brewery.</em></p>
+          <span class="skills"><h6>React</h6><h6>React-Leaflet</h6><h6>Open Brewery API</h6><h6>Netlify</h6></span>
+          <span class="links"><a target="_blank" href="https://github.com/codetann/open-brewery">Github <i class="fas fa-external-link-alt"></i></a><a target='_blank' href="https://sharp-kare-eca3bb.netlify.app/">Live App <i class="fas fa-external-link-alt"></i></a></span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
