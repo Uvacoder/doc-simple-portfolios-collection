@@ -1,0 +1,177 @@
+html, body {
+  max-width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+.socials {
+  position: fixed;
+  font-size: 1.7rem; 
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+.image {
+  position: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.draggable {
+  --deckgo-drr-border: none;
+  --deckgo-drr-anchor-width: 0;
+  --deckgo-drr-rotate-anchor-action-border: 0;
+  --deckgo-drr-rotate-anchor-presentation-border-right: none;
+}
+
+.blur {
+  top: 50%;
+  left: 42%;
+  width: 17%;
+  height: 38.5%;
+}
+
+.google {
+  top: 38%;
+  left: 10%;
+  width: 9%;
+  height: 14%;
+}
+
+.iris {
+  top: 60%;
+  left: 42%;
+  width: 4.5%;
+  height: 7%;
+}
+
+.palette {
+  top: 10%;
+  left: 42%;
+  width: 17%;
+  height: 38.5%;
+}
+
+.panettone {
+  top: 40%;
+  left: 65%;
+  width: 9%;
+  height: 14%;
+}
+
+.retrograde {
+  top: 70%;
+  left: 25%;
+  width: 9%;
+  height: 17%;
+}
+
+.sunkissed {
+  top: 50%;
+  left: 75%;
+  width: 17%;
+  height: 38.5%;
+}
+
+.youtube {
+  top: 38%;
+  left: 15%;
+  width: 26%;
+  height: 25%;
+}
+
+.palette-bot {
+  top: 72%;
+  left: 53%;
+  width: 26%;
+  height: 25%;
+}
+
+@media screen and (max-width: 600px) {
+  .socials {
+    font-size: 2rem; 
+  }
+
+  /* .greco {
+    height: 30%;
+  }
+
+  .chili {
+    height: 20%;
+  }
+
+  .greek-man {
+    height: 20%;
+  }
+
+  .red-woman {
+    height: 20%;
+  }
+
+  .eyebrows {
+    height: 20%;
+  }
+
+  .woman {
+    height: 20%;
+  }
+
+  .pigeon {
+    height: 20%;
+  }
+
+  .face {    
+    height: 20%;
+  }
+
+  .contour {
+    height: 20%;
+  }
+
+  .broccoli-face {
+    height: 20%;
+  } */
+
+  .blur {
+    height: 18%;
+  }
+  
+  .google {
+    height: 7%;
+  }
+  
+  .iris {
+    height: 3.5%;
+  }
+  
+  .palette {
+    height: 18%;
+  }
+  
+  .panettone {
+    height: 7%;
+  }
+  
+  .retrograde {
+    height: 9%;
+  }
+  
+  .sunkissed {
+    height: 18%;
+  }
+  
+  .youtube {
+    height: 12%;
+  }
+
+  .palette-bot {
+    height: 7%;
+  }
+}
