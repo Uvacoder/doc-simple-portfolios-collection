@@ -1,0 +1,151 @@
+body {
+    margin: 0px;
+    background-color: #EAE7DC;
+    color: #8E8D8A;
+    font-family: Inter, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #8E8D8A;
+}
+
+.credit {
+    font-size: 13px;
+}
+
+.name {
+    color: #E85A4F;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    font-size: 58px;
+    line-height: 100%;
+}
+
+.bio {
+    margin-bottom: 40px;
+    font-family: Lora, sans-serif;
+    color: #848d96;
+    font-size: 19px;
+    line-height: 140%;
+}
+
+.container {
+    display: grid;
+}
+
+.links {
+    display: grid;
+    margin-bottom: 40px;
+}
+
+.image {
+    background-image: url('pavel-polivka.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center center;
+}
+
+.content {
+    overflow: auto;
+    padding: 80px;
+}
+
+.column-header {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.list {
+    font-family: Lora, sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    padding-left: 0;
+    list-style: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #EAE7DC;
+    border-radius: 5px;
+    width: 95%;
+    position: relative;
+  }
+
+  .popup h2 {
+    margin-top: 0;
+    color: #e98074;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e98074;
+  }
+  .popup .close:hover {
+    color: #8e8d8a;
+  }
+  .popup .popup-content {
+    max-height: 30%;
+    overflow: auto;
+    min-height: 80vh;
+  }
+
+  .popup .center {
+    display: flex;
+    justify-content: center;
+  }
+
+@media screen and (min-width: 950px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .links {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .image {
+        height: 420px;
+        max-height: 50vh;
+        min-height: auto;
+        background-position: 10% 10%;
+    }
+
+}
+
+
+
