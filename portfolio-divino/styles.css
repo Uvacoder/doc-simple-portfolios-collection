@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+}
+
+.box {
+    padding: 2rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    height: 150px;
+    border-radius: 50%;
+}
