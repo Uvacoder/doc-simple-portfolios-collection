@@ -1,0 +1,234 @@
+*, *:before, *:after { box-sizing: inherit; }
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    background: url('img/paper.png');
+}
+.nametag {
+    background: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 175px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    float: left;
+}
+main {
+    min-height: 100%;
+    position: relative;
+}
+section {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: hidden;
+}
+article {
+    margin: 0 auto;
+    background: #ffffff;
+    width: 800px;
+    margin-top: 20px;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    height: 100%;
+    overflow: auto;
+    margin-bottom: 126px;
+}
+article > div {
+    float: left;
+    margin: 20px;
+    padding-bottom: 10px;
+    float: left;
+    margin: 20px;
+    width: 250px;
+    height: 200px;
+}
+article > div > div {
+    background: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    width: 250px;
+    bottom: 5px;
+    display: inline-block;
+    margin-bottom: 20;
+    height: 50px;
+    position: relative;
+    left: 0;
+    bottom: 60px;
+}
+nav {
+    float: right;
+    height: 64px;
+}
+ul {
+    list-style: none;
+    padding-top: 8px;
+}
+li {
+    display: inline-block;
+    padding: 0px 10px 0px 8px;
+    border-right: 1px solid #cccccc;
+}
+li a {
+    color: #777777;
+    text-decoration: none;
+}
+li:last-child {
+    border: none;
+}
+header {
+    background: #ffffff;
+    height: 64px;
+    border-bottom: 2px solid #dddddd;
+}
+.headerwrap {
+    width: 960px;
+    margin: 0 auto;
+}
+h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    font-size: 20px;
+}
+hr {
+    height: 0;
+    border: 0;
+    border-bottom: 2px solid #dddddd;
+    margin-bottom: 20px;
+}
+img {
+    float: left;
+}
+.headshot {
+    padding-right: 20px;
+}
+p {
+    line-height: 2;
+    font-size: 16px;
+}
+footer {
+    margin-top: 60px;
+    background: #666666;
+    color: #cccccc;
+    height: 40px;
+    text-align: center;
+    border-top: 6px solid #4aaaa5;
+    padding-top: 20px;
+    width: 100%;
+    line-height: 3;
+    position: absolute;
+    bottom: 0;
+}
+input {
+    margin: 5px 0 10px 0;
+    padding: 5px;
+    width: 780px;
+    display: inline-block;
+    border: 1px solid #cccccc;
+}
+textarea {
+    height: 100px;
+    width: 788px;
+    display: inline-block;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+}
+button {
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 980px) {
+    section {
+        float: left;
+        margin: 0;
+        width: 100%;
+    }
+    article {
+        float: left;
+        width: 70%;
+    }
+
+    textarea {
+        width: 99%;
+    }
+    input {
+        width: 98%;
+    }
+    footer {
+        float: left;
+        position: static;
+    }
+    .headerwrap, main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        float: none;
+        margin: 20px auto;
+        width: 100%;
+    }
+    article{
+        float: none;
+        width: 76%;
+        margin: 0 auto;
+    }
+
+    textarea {
+        width: 99%;
+    }
+    input {
+        width: 98%;
+    }
+    .headerwrap, main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    article {
+        width: 70%;
+        overflow: hidden;
+    }
+    article > div {
+        float: none;
+        margin: 20px auto;
+    }
+    img {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .nametag {
+        width: 100%;
+    }
+    nav {
+        float: left;
+        width: 100%;
+        background: #ffffff;
+        border-bottom: 2px solid #dddddd;
+        margin-bottom: 20px;
+
+    }
+    ul {
+        text-align: center;
+        padding-left: -40px;
+        position: relative;
+        left: -40px;
+        width: 100%;
+    }
+}
