@@ -1,0 +1,285 @@
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  display: none;
+  width: 100vw;
+  color: #f6c7a6;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  
+  background: rgb(77,102,232);
+  background: linear-gradient(225deg, rgba(77,102,232,1) 0%, rgba(101,108,215,1) 35%, rgba(154,122,182,1) 95%);
+  z-index: -20;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ----- Helper Classes ----- */
+.upper {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  transition: font-weight .4s ease-in;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  text-shadow: 0px 0px 25px #2538BE;
+  font-weight: 900;
+}
+
+/* ----- Layout Classes ----- */
+
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  background:
+    url(/img/wave.svg) repeat-y center / 100%,
+    radial-gradient(rgba(106, 107, 210, .8) 27%, rgba(0,0,0,0) 27%) center/18px 18px;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 100%;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+.project-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  text-align: center;
+  margin-bottom: .8rem;
+}
+
+.project:active {
+  text-decoration: line-through;
+}
+
+.header {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: auto;
+}
+
+.footer {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-top: auto;
+}
+
+.name-div,
+.git-div,
+.proj-div,
+.email-div {
+  display: none;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.proj-div,
+.name-div {
+  transition: transform .5s, text-shadow .5s;
+}
+
+.proj-div:hover,
+.name-div:hover {
+  transform: translateY(-3px);
+  text-shadow: 0px 6px 15px #2538BE;
+}
+
+.git-div,
+.email-div {
+  position: relative;
+  height: 45%;
+}
+
+.git, 
+.email {
+  overflow: hidden;
+}
+
+.git-icon {
+  opacity: 1;
+  margin: 1.2rem auto;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.email-icon {
+  transform: scale(1);
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  transition: transform .3s;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  background: #BFBFBF;
+  box-shadow: 0px 20px 100px #2538BE;
+}
+
+.about {
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.hey-there {
+  opacity: 0;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.title {
+  color: #EF9191;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  
+  .main-wrapper {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 67%;
+    max-width: 880px;
+    margin: 0 auto;
+    z-index: -1;
+  }
+
+  .project-wrapper {
+    position: absolute;
+    right: -5000px;
+    top: 0;
+    bottom: 0;
+    margin-right: 7%;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: -1;
+  }
+
+  .header {
+    flex-direction: row;
+    margin-top: 4.3rem;
+    margin-bottom: auto;
+  }
+
+  .name-div,
+  .git-div {
+    margin-left: 8.62%;
+  }
+
+  .proj-div,
+  .email-div {
+    margin-right: 8.62%;
+    margin-left: auto;
+  }
+
+  .about {
+    padding: 0;
+    text-align: left;
+    margin-left: 3.4rem;
+  }
+
+  .footer {
+    flex-direction: row;
+    margin-bottom: 4.3rem;
+    margin-top: auto;
+  }
+
+  .title {
+    color: #EF9191;
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .title:hover {
+    cursor: pointer;
+    text-decoration: line-through;
+  }
+
+  .git-icon {
+    opacity: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    bottom: 9px;
+  }
+  
+  .email-icon {
+    transform: scale(0);
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    position: absolute;
+    right: 37%;
+    bottom: 12px;
+    transition: transform .3s, height .3s;
+  }
+
+  .email-div:hover .email-icon {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main-wrapper {
+    flex-direction: row;
+  }
+}
