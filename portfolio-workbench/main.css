@@ -1,0 +1,84 @@
+:root {
+  --fs-s: 1vw;
+  --fs-m: calc(1vw + 1rem);
+  --fs-l: calc(7vw + 1rem);
+
+  --sp-m: 5vw;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  padding: calc(4vw + 0.1rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: unset;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  li {
+    margin-top: 0.2em;
+  }
+}
+
+li:hover {
+  color: hsla();
+}
+
+li:before {
+  content: "→";
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 0;
+  display: inline-flex;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+li:hover {
+  color: hsl(0, 80%, 44%);
+}
+
+.fs-s {
+  font-size: var(--fs-s);
+}
+.fs-m {
+  font-size: var(--fs-m);
+}
+.fs-l {
+  font-size: var(--fs-l);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+.fw-700 {
+  font-weight: 700;
+}
