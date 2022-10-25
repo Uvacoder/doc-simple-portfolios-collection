@@ -1,0 +1,176 @@
+/* ELEMENTS */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f6f2;
+}
+
+
+
+.container-fluid {
+  padding: 5% 10% 10%;
+}
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h3 {
+  text-align: center;
+  font-size: 1.250rem;
+  padding: 4%;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+hr {
+  background-color: black;
+}
+
+
+/* TITLE SECTION */
+
+#title-section {
+  background-color: #5588a3;
+  color: #f9f6f2;
+}
+
+.navbar {
+  padding-bottom: 5%;
+  font-size: 1.250rem;
+}
+
+.nav-item {
+  margin: 4px 15px;
+}
+
+
+
+.title-stuff {
+  text-align: center;
+}
+
+
+.subtitle {
+  line-height: 2;
+  font-size: 1.250rem;
+  padding-top: 6%;
+}
+
+
+.title-img {
+  width: 80%;
+  margin-left: 15%;
+}
+
+
+
+
+/* GALLERY SECTION */
+
+#gallery-section {
+  padding: 5% 0;
+}
+
+.gallery-description {
+  width: 70%;
+  margin: 0 auto;
+  padding: 3% 3%;
+  font-size: 1.250rem;
+}
+
+
+
+
+
+/* OUR MISSION SECTION */
+
+#our-mission-section{
+  padding: 5% 0;
+}
+
+
+.mission-description {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  width: 70%;
+  font-size: 1.250rem;
+  margin: 0 auto;
+}
+
+
+
+
+/* PRICING SECTION */
+
+#pricing-section{
+  padding: 5% 0;
+}
+
+
+.pricing-description{
+  width: 70%;
+  margin: 0 auto;
+  padding: 3% 3%;
+  font-size: 1.250rem;
+}
+
+
+.card-card-header {
+  text-align: center;
+}
+
+
+
+
+/* CONTACT SECTION */
+
+
+#contact-Section{
+  padding: 5% 0;
+}
+
+
+.contact-description{
+  width: 70%;
+  margin: 0 auto;
+  padding: 3% 3%;
+  font-size: 1.250rem;
+}
+
+
+/* FOOTER */
+
+#footer{
+  background-color: #5588a3;
+  padding: 5% 5% 2%;
+  text-align: center;
+}
+
+.copyright {
+  color: #fff;
+}
+
+.social-icons {
+  margin: 5px 30px;
+  padding-bottom: 2%;
+  font-size: 1.250rem;
+
+}
+
+.social-icons:hover {
+  color: #fff;
+}
