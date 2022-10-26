@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Hawkins</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="columns is-marginless">
+    <div id="page-content" class="column is-centered">
+      <header class="columns is-centered is-vcentered">
+        <div class="column" id="intro-visual">
+          <div class="level">
+            <div class="level-left"></div>
+            <div class="level-right">
+              <div class="level-item">
+                <div class="image">
+                  <img
+                    id="max-img"
+                    class="is-rounded"
+                    src="images/max-headshot_1_1.jpg"
+                    alt="Max Hawkins is a software engineer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column" id="intro-content">
+          <div class="columns">
+            <div class="column is-two-thirds">
+              <div class="container">
+                <h1 class="is-size-1 has-text-centered">Max Hawkins</h1>
+                <div class="level social-links">
+                  <span
+                    ><a target="_blank" href="assets/Max_Hawkins_Resume.pdf"
+                      ><i class="fas fa-file-alt"></i> </a
+                  ></span>
+                  <span
+                    ><a
+                      target="_blank"
+                      href="https://www.github.com/thinkybeast"
+                      ><i class="fab fa-github"></i> </a
+                  ></span>
+                  <span
+                    ><a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/maxhawk/"
+                      ><i class="fab fa-linkedin"></i></a
+                  ></span>
+                </div>
+                <hr />
+                <div id="intro-text">
+                  <p class="is-size-5">
+                    Hi, I'm a software engineer based in Alameda, CA. I build
+                    fast, scalable cloud applications. I love working in NodeJS,
+                    React, and Ruby.
+                  </p>
+                  <p class="is-size-5">
+                    I recently co-created <a href="#bento">Bento</a>, an
+                    open-source, serverless video transcoder deployed to AWS.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <hr />
+        <section id="bento" class="section">
+          <div id="bento-logo" class="is-16by9">
+            <img src="images/bento_inline_logo.jpg" alt="bento logo" />
+          </div>
+          <div class="columns">
+            <div class="column"></div>
+            <div class="column is-5">
+              <p class="is-size-5">
+                Bento is a <em>blazing-fast</em> serverless video transcoding
+                pipeline.
+              </p>
+              <p class="is-size-6">
+                By leveraging the instant scale and concurrent execution of
+                function-as-a-service architecture, Bento transcodes hundreds of
+                small parts of a video file in parallel, slashing multi-hour
+                transcoding jobs down to minutes.
+              </p>
+              <p class="is-size-6">
+                Read our case study to learn about the engineering behind Bento,
+                including how we managed timing and concurrency in an
+                event-driven architecture, and tackled the storage bottlenecks
+                inherent to multi-gigabyte video files.
+              </p>
+              <div class="level">
+                <a
+                  href="https://bento-video.github.io"
+                  class="button is-large level-item"
+                  target="_blank"
+                  >Read the Bento case study</a
+                >
+              </div>
+            </div>
+            <div class="column is-5">
+              <figure>
+                <video
+                  src="images/dashboard_demo.mp4"
+                  loop
+                  muted
+                  playsinline
+                  autoplay
+                ></video>
+              </figure>
+            </div>
+            <div class="column"></div>
+          </div>
+        </section>
+        <hr />
+        <section id="other_projects">
+          <h1 class="is-size-2">Other Projects</h1>
+
+          <div class="columns is-centered is-vcentered is-desktop">
+            <div class="column"></div>
+            <div
+              class="column project is-one-quarter-desktop is-four-fifths-tablet"
+            >
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="images/reaction.jpg" alt="Reaction app" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h2 class="is-size-4 has-text-centered">Reaction</h2>
+                    <p>
+                      A project management app inspired by Trello. Built in
+                      React/Redux with a Rails back-end API and PostgreSQL
+                      database.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column project is-one-quarter-desktop is-four-fifths-tablet"
+            >
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="images/form_check.jpg" alt="Form check app" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h2 class="is-size-4 has-text-centered">Form Check</h2>
+                    <p>
+                      A weightlifting web app built with Ruby and Sinatra
+                      allowing users to create custom workout routines and
+                      attach related form videos via the YouTube API
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="column project is-one-quarter-desktop is-four-fifths-tablet"
+            >
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="images/ohyea.png" alt="ohyea app" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h2 class="is-size-4 has-text-centered">ohyea</h2>
+                    <p>
+                      A modern, responsive todo app, built in Javascript and
+                      Handlebars.js, with an Express API backend.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column"></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <hr />
+        <div id="footer-links" class="level social-links">
+          <span
+            ><a target="_blank" href="assets/Max_Hawkins_Resume.pdf"
+              ><i class="fas fa-file-alt"></i> </a
+          ></span>
+          <span
+            ><a target="_blank" href="https://www.github.com/thinkybeast"
+              ><i class="fab fa-github"></i> </a
+          ></span>
+          <span
+            ><a target="_blank" href="https://www.linkedin.com/in/maxhawk/"
+              ><i class="fab fa-linkedin"></i></a
+          ></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
